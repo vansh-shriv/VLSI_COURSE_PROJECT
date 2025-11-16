@@ -1,0 +1,86 @@
+$date
+	Sun Nov 16 17:09:56 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_multiplier_array $end
+$var wire 16 ! product [15:0] $end
+$var reg 8 " a [7:0] $end
+$var reg 8 # b [7:0] $end
+$scope module DUT $end
+$var wire 8 $ a [7:0] $end
+$var wire 8 % b [7:0] $end
+$var wire 16 & product [15:0] $end
+$scope begin genblk1[0] $end
+$var parameter 2 ' i $end
+$upscope $end
+$scope begin genblk1[1] $end
+$var parameter 2 ( i $end
+$upscope $end
+$scope begin genblk1[2] $end
+$var parameter 3 ) i $end
+$upscope $end
+$scope begin genblk1[3] $end
+$var parameter 3 * i $end
+$upscope $end
+$scope begin genblk1[4] $end
+$var parameter 4 + i $end
+$upscope $end
+$scope begin genblk1[5] $end
+$var parameter 4 , i $end
+$upscope $end
+$scope begin genblk1[6] $end
+$var parameter 4 - i $end
+$upscope $end
+$scope begin genblk1[7] $end
+$var parameter 4 . i $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b111 .
+b110 -
+b101 ,
+b100 +
+b11 *
+b10 )
+b1 (
+b0 '
+$end
+#0
+$dumpvars
+b110010 &
+b1010 %
+b101 $
+b1010 #
+b101 "
+b110010 !
+$end
+#10000
+b11100001 !
+b11100001 &
+b1111 #
+b1111 %
+b1111 "
+b1111 $
+#20000
+b0 !
+b0 &
+b11001000 #
+b11001000 %
+b0 "
+b0 $
+#30000
+b1111111000000001 !
+b1111111000000001 &
+b11111111 #
+b11111111 %
+b11111111 "
+b11111111 $
+#40000

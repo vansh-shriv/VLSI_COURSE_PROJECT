@@ -75,22 +75,28 @@ http://gtkwave.sourceforge.net/
 
 ## How to Run Simulations
 ```
-### **Array Multiplier**
-iverilog -o array.out src/array_multiplier.v tb/tb_array.v
-vvp array.out
-gtkwave waves/array.vcd &
+Array Multiplier
+iverilog -o mult.out src/multiplier_array.v tb/tb_multiplier.v
+vvp mult.out
+gtkwave waves/multiplier_array.vcd 
 ```
 ```
-### **Wallace Multiplier**
-iverilog -o mult_wallace.out src/wallace_multiplier.v tb/tb_wallace.v
-vvp wallace.out
-gtkwave waves/wallace.vcd &
+Fast Multiplier
+iverilog -o mult_fast.out src/multiplier_fast.v src/half_adder.v src/full_adder.v  tb/tb_multiplier_fast.v
+vvp mult_fast.out
+gtkwave waves/multiplier_fast.vcd 
 ```
 ```
-### **MAC Unit**
-iverilog -o mac.out src/mac_unit.v tb/tb_mac.v
-vvp mac.out
-gtkwave waves/mac.vcd &
+Wallace Multiplier
+iverilog -o mult_wallace.out src/multiplier_wallace.v src/csa3_16.v tb/tb_multiplier_wallace.v
+vvp mult_wallace.out
+gtkwave waves/multiplier_wallace.vcd &
+```
+```
+MAC Unit
+iverilog -o mac_unit.out src/mac_unit.v src/multiplier_wallace.v src/csa3_16.v tb/tb_mac.v
+vvp mac_unit.out
+gtkwave waves/mac_unit.vcd &
 ```
 
 Metric	Array Multiplier	Wallace Tree + CLA	MAC Unit

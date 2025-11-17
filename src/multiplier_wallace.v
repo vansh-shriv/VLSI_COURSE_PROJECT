@@ -34,8 +34,3 @@ module multiplier_wallace(
   assign product = s6 + c4 + c5 + c6;
 
 endmodule
-
-// 3:2 carry-save adder for 16-bit vectors.
-// sum = x ^ y ^ z
-// carry_sh = ((x&y) | (y&z) | (x&z)) << 1  (carry bits shifted to next weight)
-

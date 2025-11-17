@@ -74,22 +74,24 @@ http://gtkwave.sourceforge.net/
 ---
 
 ## How to Run Simulations
-
+```
 ### **Array Multiplier**
 iverilog -o array.out src/array_multiplier.v tb/tb_array.v
 vvp array.out
 gtkwave waves/array.vcd &
-
+```
+```
 ### **Wallace Multiplier**
 iverilog -o mult_wallace.out src/wallace_multiplier.v tb/tb_wallace.v
 vvp wallace.out
 gtkwave waves/wallace.vcd &
-
+```
+```
 ### **MAC Unit**
 iverilog -o mac.out src/mac_unit.v tb/tb_mac.v
 vvp mac.out
 gtkwave waves/mac.vcd &
-
+```
 
 Metric	Array Multiplier	Wallace Tree + CLA	MAC Unit
 Gate Delay (approx.)	High (O(n))	Very Low (O(log n))	Medium–High

@@ -6,7 +6,7 @@ module tb_multiplier_fast;
 
     multiplier_fast DUT (.a(a), .b(b), .product(product));
 
-    integer i, j;
+    integer i;
 
     initial begin
         $dumpfile("waves/multiplier_fast.vcd");

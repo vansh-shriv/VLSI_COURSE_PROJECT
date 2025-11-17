@@ -12,6 +12,8 @@ module tb_multiplier_wallace;
         .product(product)
     );
 
+    integer i;
+
     initial begin
         $dumpfile("waves/multiplier_wallace.vcd");
         $dumpvars(0, tb_multiplier_wallace);
@@ -26,7 +28,19 @@ module tb_multiplier_wallace;
         a = 8'd255; b = 8'd1;   #10;
         a = 8'd255; b = 8'd255; #10;
 
-        $display("Simulation complete.");
+         // Random exhaustive-ish tests (not full 65536 but many)
+        for (i = 0; i < 2000; i = i + 1) begin
+            a = $random % 256;
+            b = $random % 256;
+            #1;
+            if (product !== ((a+0)*(b+0))) begin
+                $display("ERROR: a=%0d b=%0d product=%0d expected=%0d", a, b, product, ((a+0)*(b+0)));
+                $finish;
+            end
+            #4;
+        end
+
+        $display("All random checks passed.");
         $finish;
     end
 

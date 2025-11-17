@@ -1,0 +1,4 @@
+Running: xsim.dir/tb_multiplier_wallace_behav/xsimk.exe -simmode gui -wdb tb_multiplier_wallace_behav.wdb -simrunnum 0 -socket 51616
+Design successfully loaded
+Design Loading Memory Usage: 29592 KB (Peak: 29592 KB)
+Design Loading CPU Usage: 1905 ms

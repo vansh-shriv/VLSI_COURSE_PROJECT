@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VLSI proj/VLSI_COURSE_PROJECT-main/src/csa3_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module csa3_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VLSI proj/VLSI_COURSE_PROJECT-main/src/multiplier_wallace.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier_wallace
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VLSI proj/VLSI_COURSE_PROJECT-main/tb/tb_multiplier_wallace.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_multiplier_wallace
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/VIVADO/projects/WT/WT.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

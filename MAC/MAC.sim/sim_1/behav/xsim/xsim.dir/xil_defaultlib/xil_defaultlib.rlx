@@ -1,0 +1,9 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+D:/VLSI proj/VLSI_COURSE_PROJECT-main/src/csa3_16.v,1763356180,verilog,,D:/VLSI proj/VLSI_COURSE_PROJECT-main/src/mac_unit.v,,csa3_16,,,,,,,,
+D:/VLSI proj/VLSI_COURSE_PROJECT-main/src/mac_unit.v,1763356180,verilog,,D:/VLSI proj/VLSI_COURSE_PROJECT-main/src/multiplier_wallace.v,,mac_unit,,,,,,,,
+D:/VLSI proj/VLSI_COURSE_PROJECT-main/src/multiplier_wallace.v,1763356180,verilog,,D:/VLSI proj/VLSI_COURSE_PROJECT-main/tb/tb_mac.v,,multiplier_wallace,,,,,,,,
+D:/VLSI proj/VLSI_COURSE_PROJECT-main/tb/tb_mac.v,1763356180,verilog,,,,tb_mac,,,,,,,,
+E:/VIVADO/projects/MAC/MAC.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,,,,,,,

@@ -98,7 +98,8 @@ Speed	Slowest	Fastest	Fast (depends on adder)
 Power (switching)	Moderate	Highest (more hardware)	Depends on accumulator width
 Best Use Case	Low-power devices	High-speed DSP	FIR filters, ML accelerators
 
-🔍 Observations
+Observations
+```
 Array Multiplier
     Simple to implement
     Long critical path → slow
@@ -115,7 +116,8 @@ MAC Unit
         Neural network accelerators
         DSP convolution pipelines
     Speed dependent on adder + multiplier latency
-
+```
+```
 Waveform Visualization
 All output waveforms are saved inside waves/*.vcd and can be viewed using GTKWave.
 Important signals include:
@@ -123,17 +125,20 @@ Important signals include:
     Partial products (Wallace)
     Carry bits (CLA)
     Timing and latency comparison
-
+```
+```
 Conclusion
-This project demonstrates:
+    This project demonstrates:
 
-    How different multiplier architectures affect performance, area, and power
-    The advantage of Wallace Tree with CLA for high-speed applications
-    The real-world importance of MAC units in DSP/ML hardware
-
+        How different multiplier architectures affect performance, area, and power
+        The advantage of Wallace Tree with CLA for high-speed applications
+        The real-world importance of MAC units in DSP/ML hardware
+```
+```
 We can extend this by:
 
     Synthesizing in Yosys + OpenLane
     Creating GDS layout
     Adding a Booth multiplier
     Power analysis using switching activity (VCD → SAIF)
+```

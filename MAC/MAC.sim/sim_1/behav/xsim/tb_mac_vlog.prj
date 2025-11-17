@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"D:/VLSI proj/VLSI_COURSE_PROJECT-main/src/csa3_16.v" \
+"D:/VLSI proj/VLSI_COURSE_PROJECT-main/src/mac_unit.v" \
+"D:/VLSI proj/VLSI_COURSE_PROJECT-main/src/multiplier_wallace.v" \
+"D:/VLSI proj/VLSI_COURSE_PROJECT-main/tb/tb_mac.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
